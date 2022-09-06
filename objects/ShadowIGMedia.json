@@ -1,0 +1,93 @@
+{
+  "metadata": {
+    "fields": [
+      {
+        "name": "id",
+        "description": "Id",
+        "type": "numeric string"
+      },
+      {
+        "name": "caption",
+        "description": "Caption",
+        "type": "string"
+      },
+      {
+        "name": "comments_count",
+        "description": "Comments Count",
+        "type": "integer"
+      },
+      {
+        "name": "ig_id",
+        "description": "IgId",
+        "type": "numeric string"
+      },
+      {
+        "name": "is_comment_enabled",
+        "description": "IsCommentEnabled",
+        "type": "bool"
+      },
+      {
+        "name": "is_shared_to_feed",
+        "description": "is_shared_to_feed field indicates whether the reels media is shared to feed or not",
+        "type": "bool"
+      },
+      {
+        "name": "like_count",
+        "description": "Likes Count",
+        "type": "integer"
+      },
+      {
+        "name": "media_product_type",
+        "description": "Product type of the media (Feed, Story, IGTV etc.)",
+        "type": "string"
+      },
+      {
+        "name": "media_type",
+        "description": "MediaType",
+        "type": "string"
+      },
+      {
+        "name": "media_url",
+        "description": "MediaUrl",
+        "type": "string"
+      },
+      {
+        "name": "owner",
+        "description": "Owner",
+        "type": "iguser"
+      },
+      {
+        "name": "permalink",
+        "description": "Permalink",
+        "type": "string"
+      },
+      {
+        "name": "shortcode",
+        "description": "Shortcode",
+        "type": "string"
+      },
+      {
+        "name": "thumbnail_url",
+        "description": "ThumbnailUrl",
+        "type": "string"
+      },
+      {
+        "name": "timestamp",
+        "description": "Timestamp",
+        "type": "datetime"
+      },
+      {
+        "name": "username",
+        "description": "Username of the media owner",
+        "type": "string"
+      }
+    ],
+    "type": "shadowigmedia",
+    "connections": {
+      "children": "https://graph.facebook.com/v14.0/{ID}/children?access_token={ACCESS_TOKEN}&pretty=0",
+      "comments": "https://graph.facebook.com/v14.0/{ID}/comments?access_token={ACCESS_TOKEN}&pretty=0",
+      "insights": "https://graph.facebook.com/v14.0/{ID}/insights?access_token={ACCESS_TOKEN}&pretty=0",
+      "product_tags": "https://graph.facebook.com/v14.0/{ID}/product_tags?access_token={ACCESS_TOKEN}&pretty=0"
+    }
+  }
+}
