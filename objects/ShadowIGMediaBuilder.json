@@ -1,0 +1,22 @@
+{
+  "metadata": {
+    "fields": [
+      {
+        "name": "id",
+        "description": "Id",
+        "type": "numeric string"
+      },
+      {
+        "name": "status",
+        "description": "Status",
+        "type": "string"
+      },
+      {
+        "name": "status_code",
+        "description": "The status of creation process",
+        "type": "enum"
+      }
+    ],
+    "type": "shadowigmediabuilder"
+  }
+}
