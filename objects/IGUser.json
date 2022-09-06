@@ -1,0 +1,88 @@
+{
+  "metadata": {
+    "fields": [
+      {
+        "name": "id",
+        "description": "The id of the object",
+        "type": "numeric string"
+      },
+      {
+        "name": "biography",
+        "description": "Biography of the user",
+        "type": "string"
+      },
+      {
+        "name": "business_discovery",
+        "description": "Loads business discovery information",
+        "type": "iguser"
+      },
+      {
+        "name": "followers_count",
+        "description": "Active follower count of the user",
+        "type": "integer"
+      },
+      {
+        "name": "follows_count",
+        "description": "Active follows count of the user",
+        "type": "integer"
+      },
+      {
+        "name": "ig_id",
+        "description": "Ig Id of the user",
+        "type": "integer"
+      },
+      {
+        "name": "media_count",
+        "description": "Filtered media count of the user",
+        "type": "integer"
+      },
+      {
+        "name": "mentioned_comment",
+        "description": "Loads the comment if the user is mentioned in it",
+        "type": "shadowigcomment"
+      },
+      {
+        "name": "mentioned_media",
+        "description": "Loads the media if the user is mentioned in the caption",
+        "type": "shadowigmedia"
+      },
+      {
+        "name": "name",
+        "description": "Name of the user",
+        "type": "string"
+      },
+      {
+        "name": "profile_picture_url",
+        "description": "The cdn url to query the raw profile picture of the user",
+        "type": "string"
+      },
+      {
+        "name": "shopping_review_status",
+        "description": "Status of the Shopping Merchant Review process for this account",
+        "type": "enum"
+      },
+      {
+        "name": "username",
+        "description": "Username handle of the user",
+        "type": "string"
+      },
+      {
+        "name": "website",
+        "description": "Url in the profile",
+        "type": "string"
+      }
+    ],
+    "type": "iguser",
+    "connections": {
+      "catalog_product_search": "https://graph.facebook.com/v14.0/{ID}/catalog_product_search?access_token={ACCESS_TOKEN}&pretty=0",
+      "content_publishing_limit": "https://graph.facebook.com/v14.0/{ID}/content_publishing_limit?access_token={ACCESS_TOKEN}&pretty=0",
+      "insights": "https://graph.facebook.com/v14.0/{ID}/insights?access_token={ACCESS_TOKEN}&pretty=0",
+      "live_media": "https://graph.facebook.com/v14.0/{ID}/live_media?access_token={ACCESS_TOKEN}&pretty=0",
+      "media": "https://graph.facebook.com/v14.0/{ID}/media?access_token={ACCESS_TOKEN}&pretty=0",
+      "product_appeal": "https://graph.facebook.com/v14.0/{ID}/product_appeal?access_token={ACCESS_TOKEN}&pretty=0",
+      "recently_searched_hashtags": "https://graph.facebook.com/v14.0/{ID}/recently_searched_hashtags?access_token={ACCESS_TOKEN}&pretty=0",
+      "stories": "https://graph.facebook.com/v14.0/{ID}/stories?access_token={ACCESS_TOKEN}&pretty=0",
+      "tags": "https://graph.facebook.com/v14.0/{ID}/tags?access_token={ACCESS_TOKEN}&pretty=0"
+    }
+  },
+}
